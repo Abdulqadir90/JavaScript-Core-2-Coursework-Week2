@@ -7,7 +7,7 @@ for (let i = 0; i < arrayOfPeople.length; i++) {
   content.append(firstHeader);
   let secondHeader = document.createElement("h2");
   secondHeader.innerHTML = arrayOfPeople[i]["job"];
-  content.append(secondHeader);
+  content.append(secondHeader); 
 
 }
 }
