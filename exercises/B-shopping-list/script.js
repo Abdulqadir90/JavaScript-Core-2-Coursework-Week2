@@ -1,17 +1,14 @@
 function shoppingList(arrayOfLists) {
-  let content = document.querySelector("content");
+  let content = document.querySelector("#content");
 
-  for (let i =0; i < arrayOfLists.length; i++) {
-    let newList = document.createElement("ul");
-    newList.innerHTML = arrayOfLists[i];
-    content.append(newList);
-    let itemsEl = document.createElement("li");
-    itemsEl.innerHTML = arrayOfLists[i];
-    newList.append(itemsEl);
-  }
+  let ulEls = document.createElement("ul");
+  content.appendChild(ulEls);
+  shopping.forEach(function (items) {
+    let listEls = document.createElement("li");
+    listEls.innerHTML = items;
+    ulEls.appendChild(listEls);
 
-
-  
+  });
 
 
 }
