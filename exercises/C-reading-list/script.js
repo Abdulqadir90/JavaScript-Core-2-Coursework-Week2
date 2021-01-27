@@ -1,4 +1,4 @@
-function readingList(books) {
+function readingList(books) { 
   let content = document.querySelector("content");
   let listEl = document.createElement("ul");
   content.appendChild(listEl);
@@ -8,7 +8,7 @@ function readingList(books) {
     listEl.appendChild(el);
 
     let titleEl = document.createElement("p");
-    titleEl.innerHTML = obj["newTitle"];
+    titleEl.innerHTML = obj["title"];
     el.appendChild(titleEl);
 
     el.style.height = "50px";
