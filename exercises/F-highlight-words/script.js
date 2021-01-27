@@ -1,4 +1,32 @@
 function highlightWords(paragraph, colours) {
+  let pEl = document.createElement("p");
+  let selectedEl = document.createElement('select');
+  let paraEls = document.getElementById("content");
+
+for (let i = 0; i < colours.length; i++){
+  let optionEl = document.createElement('option');
+  optionEl.innerHTML = `${colours[i]}`;
+  selectedEL.appendChild(optionEl);
+}
+let paraEls = paragraph.split(' ');
+for(let i =0; i < paraEl.length; i++) {
+    let spanEl = document.createElement('span');
+    spanEl.innerHTML = `${paraEls[i]} `;
+    span.addEventListener("click", function (e) {
+      e.style.backgroundColor = selectBox.value;
+    })
+
+
+    pEl.appendChild(span);
+    selectedEl.appendChild(select);
+    
+    
+
+    
+}
+
+
+
   // Write your code here...
 }
 
